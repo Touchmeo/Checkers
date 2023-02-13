@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Alex Hello</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+@for(int i = 0; i < 8; i++)
+{
+        @for (int j = 0; j < 8; j++)
+        {
+            @if((i + j) % 2 == 0)
+            {
+                <span>(Б)</span>
+            }
+            else
+            { 
+                <span>(Ч)</span>
+            }
+        }
+
+    <br />
+ 
+}
